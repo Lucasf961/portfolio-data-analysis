@@ -1,0 +1,214 @@
+"Tipo_Ataque","Ano","Ataques","Mortes","Media"
+"Armed Assault","1970",11,12,1.1
+"Armed Assault","1971",2,3,1.5
+"Armed Assault","1972",3,5,1.7
+"Armed Assault","1973",9,22,2.4
+"Armed Assault","1974",7,7,1
+"Armed Assault","1975",2,25,12.5
+"Armed Assault","1977",2,9,4.5
+"Armed Assault","1978",1,1,1
+"Armed Assault","1979",4,5,1.2
+"Armed Assault","1980",5,8,1.6
+"Armed Assault","1983",1,1,1
+"Armed Assault","1986",1,1,1
+"Armed Assault","1988",4,52,13
+"Armed Assault","1989",1,15,15
+"Armed Assault","1990",1,9,9
+"Armed Assault","1991",3,22,7.3
+"Armed Assault","1992",1,19,19
+"Armed Assault","1994",3,3,1
+"Armed Assault","1995",1,14,14
+"Armed Assault","1998",13,209,16.1
+"Armed Assault","1999",33,331,10
+"Armed Assault","2000",111,665,6
+"Armed Assault","2001",118,899,7.6
+"Armed Assault","2002",108,1085,10
+"Armed Assault","2003",70,359,5.1
+"Armed Assault","2004",62,925,14.9
+"Armed Assault","2005",97,358,3.7
+"Armed Assault","2006",67,205,3.1
+"Armed Assault","2007",123,430,3.5
+"Armed Assault","2008",681,2278,3.3
+"Armed Assault","2009",791,2136,2.7
+"Armed Assault","2010",840,2011,2.4
+"Armed Assault","2011",990,2221,2.2
+"Armed Assault","2012",86,360,4.2
+"Armed Assault","2013",162,786,4.9
+"Armed Assault","2014",95,1374,14.5
+"Armed Assault","2015",66,278,4.2
+"Armed Assault","2016",90,632,7
+"Armed Assault","2017",88,345,3.9
+"Armed Assault","2018",66,275,4.2
+"Armed Assault","2019",64,276,4.3
+"Assassination","1970",1,1,1
+"Assassination","1971",1,1,1
+"Assassination","1973",2,3,1.5
+"Assassination","1974",1,1,1
+"Assassination","1975",1,1,1
+"Assassination","1978",2,17,8.5
+"Assassination","1980",1,1,1
+"Assassination","1981",3,8,2.7
+"Assassination","1982",1,1,1
+"Assassination","1984",1,1,1
+"Assassination","1986",1,2,2
+"Assassination","1990",3,4,1.3
+"Assassination","1991",2,2,1
+"Assassination","1995",1,1,1
+"Assassination","1998",3,6,2
+"Assassination","1999",11,23,2.1
+"Assassination","2000",30,77,2.6
+"Assassination","2001",41,65,1.6
+"Assassination","2002",15,28,1.9
+"Assassination","2003",12,30,2.5
+"Assassination","2004",21,51,2.4
+"Assassination","2005",28,60,2.1
+"Assassination","2006",19,34,1.8
+"Assassination","2007",22,50,2.3
+"Assassination","2008",116,281,2.4
+"Assassination","2009",148,404,2.7
+"Assassination","2010",238,467,2
+"Assassination","2011",202,456,2.3
+"Assassination","2012",17,29,1.7
+"Assassination","2013",42,81,1.9
+"Assassination","2014",30,61,2
+"Assassination","2015",27,49,1.8
+"Assassination","2016",29,40,1.4
+"Assassination","2017",46,66,1.4
+"Assassination","2018",45,96,2.1
+"Assassination","2019",26,83,3.2
+"Bombing/Explosion","1971",2,4,2
+"Bombing/Explosion","1972",1,1,1
+"Bombing/Explosion","1975",1,4,4
+"Bombing/Explosion","1980",1,13,13
+"Bombing/Explosion","1985",2,3,1.5
+"Bombing/Explosion","1988",1,9,9
+"Bombing/Explosion","1989",1,1,1
+"Bombing/Explosion","1990",1,2,2
+"Bombing/Explosion","1991",3,39,13
+"Bombing/Explosion","1992",1,10,10
+"Bombing/Explosion","1995",2,37,18.5
+"Bombing/Explosion","1996",2,13,6.5
+"Bombing/Explosion","1997",9,284,31.6
+"Bombing/Explosion","1998",54,302,5.6
+"Bombing/Explosion","1999",55,360,6.5
+"Bombing/Explosion","2000",139,676,4.9
+"Bombing/Explosion","2001",122,508,4.2
+"Bombing/Explosion","2002",145,1085,7.5
+"Bombing/Explosion","2003",103,699,6.8
+"Bombing/Explosion","2004",151,1759,11.6
+"Bombing/Explosion","2005",183,1086,5.9
+"Bombing/Explosion","2006",172,1198,7
+"Bombing/Explosion","2007",280,1995,7.1
+"Bombing/Explosion","2008",781,3730,4.8
+"Bombing/Explosion","2009",876,4903,5.6
+"Bombing/Explosion","2010",773,4308,5.6
+"Bombing/Explosion","2011",821,4231,5.2
+"Bombing/Explosion","2012",236,1241,5.3
+"Bombing/Explosion","2013",347,2676,7.7
+"Bombing/Explosion","2014",201,1422,7.1
+"Bombing/Explosion","2015",104,956,9.2
+"Bombing/Explosion","2016",118,1431,12.1
+"Bombing/Explosion","2017",124,2269,18.3
+"Bombing/Explosion","2018",72,1159,16.1
+"Bombing/Explosion","2019",72,633,8.8
+"Facility/Infrastructure Attack","1983",1,2,2
+"Facility/Infrastructure Attack","1985",1,1,1
+"Facility/Infrastructure Attack","1987",1,1,1
+"Facility/Infrastructure Attack","2000",3,4,1.3
+"Facility/Infrastructure Attack","2001",2,4,2
+"Facility/Infrastructure Attack","2002",1,1,1
+"Facility/Infrastructure Attack","2004",1,1,1
+"Facility/Infrastructure Attack","2005",1,5,5
+"Facility/Infrastructure Attack","2006",3,21,7
+"Facility/Infrastructure Attack","2007",3,23,7.7
+"Facility/Infrastructure Attack","2008",11,29,2.6
+"Facility/Infrastructure Attack","2009",17,445,26.2
+"Facility/Infrastructure Attack","2010",13,34,2.6
+"Facility/Infrastructure Attack","2011",14,45,3.2
+"Facility/Infrastructure Attack","2012",5,10,2
+"Facility/Infrastructure Attack","2013",1,1,1
+"Facility/Infrastructure Attack","2015",9,28,3.1
+"Facility/Infrastructure Attack","2017",1,1,1
+"Hijacking","1988",1,2,2
+"Hijacking","1999",1,1,1
+"Hijacking","2001",6,3008,501.3
+"Hijacking","2002",1,1,1
+"Hijacking","2008",2,21,10.5
+"Hijacking","2009",1,2,2
+"Hijacking","2010",1,1,1
+"Hijacking","2011",2,2,1
+"Hijacking","2013",1,2,2
+"Hijacking","2015",1,22,22
+"Hijacking","2016",1,2,2
+"Hijacking","2017",2,6,3
+"Hostage Taking (Barricade Incident)","1973",1,2,2
+"Hostage Taking (Barricade Incident)","1977",1,2,2
+"Hostage Taking (Barricade Incident)","1981",1,1,1
+"Hostage Taking (Barricade Incident)","1982",1,1,1
+"Hostage Taking (Barricade Incident)","1983",1,1,1
+"Hostage Taking (Barricade Incident)","1996",1,123,123
+"Hostage Taking (Barricade Incident)","2002",1,170,170
+"Hostage Taking (Barricade Incident)","2004",3,370,123.3
+"Hostage Taking (Barricade Incident)","2008",2,100,50
+"Hostage Taking (Barricade Incident)","2010",6,149,24.8
+"Hostage Taking (Barricade Incident)","2011",1,7,7
+"Hostage Taking (Barricade Incident)","2012",4,51,12.8
+"Hostage Taking (Barricade Incident)","2013",4,158,39.5
+"Hostage Taking (Barricade Incident)","2014",4,28,7
+"Hostage Taking (Barricade Incident)","2015",11,340,30.9
+"Hostage Taking (Barricade Incident)","2016",6,119,19.8
+"Hostage Taking (Barricade Incident)","2017",4,342,85.5
+"Hostage Taking (Barricade Incident)","2018",6,61,10.2
+"Hostage Taking (Barricade Incident)","2019",2,38,19
+"Hostage Taking (Kidnapping)","1973",2,2,1
+"Hostage Taking (Kidnapping)","1998",1,3,3
+"Hostage Taking (Kidnapping)","1999",8,58,7.2
+"Hostage Taking (Kidnapping)","2000",13,107,8.2
+"Hostage Taking (Kidnapping)","2001",11,73,6.6
+"Hostage Taking (Kidnapping)","2002",14,71,5.1
+"Hostage Taking (Kidnapping)","2003",4,10,2.5
+"Hostage Taking (Kidnapping)","2004",4,12,3
+"Hostage Taking (Kidnapping)","2005",9,45,5
+"Hostage Taking (Kidnapping)","2006",12,35,2.9
+"Hostage Taking (Kidnapping)","2007",11,39,3.5
+"Hostage Taking (Kidnapping)","2008",87,183,2.1
+"Hostage Taking (Kidnapping)","2009",100,361,3.6
+"Hostage Taking (Kidnapping)","2010",142,236,1.7
+"Hostage Taking (Kidnapping)","2011",128,203,1.6
+"Hostage Taking (Kidnapping)","2012",8,38,4.8
+"Hostage Taking (Kidnapping)","2013",11,61,5.5
+"Hostage Taking (Kidnapping)","2014",23,274,11.9
+"Hostage Taking (Kidnapping)","2015",19,32,1.7
+"Hostage Taking (Kidnapping)","2016",33,202,6.1
+"Hostage Taking (Kidnapping)","2017",26,213,8.2
+"Hostage Taking (Kidnapping)","2018",21,592,28.2
+"Hostage Taking (Kidnapping)","2019",20,88,4.4
+"Unarmed Assault","1998",1,2,2
+"Unarmed Assault","1999",2,67,33.5
+"Unarmed Assault","2000",2,201,100.5
+"Unarmed Assault","2001",9,16,1.8
+"Unarmed Assault","2002",2,10,5
+"Unarmed Assault","2003",1,1,1
+"Unarmed Assault","2006",1,2,2
+"Unarmed Assault","2007",1,2,2
+"Unarmed Assault","2008",3,7,2.3
+"Unarmed Assault","2009",7,9,1.3
+"Unarmed Assault","2010",5,6,1.2
+"Unarmed Assault","2011",5,6,1.2
+"Unarmed Assault","2012",1,2,2
+"Unarmed Assault","2014",2,7,3.5
+"Unarmed Assault","2016",2,13,6.5
+"Unarmed Assault","2017",4,11,2.8
+"Unarmed Assault","2018",3,12,4
+"Unknown","2000",16,236,14.8
+"Unknown","2001",20,311,15.6
+"Unknown","2002",7,37,5.3
+"Unknown","2003",1,2,2
+"Unknown","2004",2,4,2
+"Unknown","2005",6,28,4.7
+"Unknown","2006",2,11,5.5
+"Unknown","2007",3,11,3.7
+"Unknown","2008",40,90,2.2
+"Unknown","2009",94,673,7.2
+"Unknown","2010",62,354,5.7
+"Unknown","2011",79,273,3.5

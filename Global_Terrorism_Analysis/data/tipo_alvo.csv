@@ -1,0 +1,429 @@
+"Tipo_Alvo","Ano","Ataques","Mortes","Media"
+"Abortion Related",1994,2,2,1
+"Abortion Related",2009,1,1,1
+"Abortion Related",2015,1,3,3
+"Airports & Aircraft",1988,1,2,2
+"Airports & Aircraft",1996,1,123,123
+"Airports & Aircraft",1999,1,1,1
+"Airports & Aircraft",2000,1,1,1
+"Airports & Aircraft",2001,3,25,8.3
+"Airports & Aircraft",2003,1,2,2
+"Airports & Aircraft",2004,1,2,2
+"Airports & Aircraft",2008,1,2,2
+"Airports & Aircraft",2009,6,34,5.7
+"Airports & Aircraft",2010,4,19,4.8
+"Airports & Aircraft",2011,5,48,9.6
+"Airports & Aircraft",2012,1,3,3
+"Airports & Aircraft",2013,3,18,6
+"Airports & Aircraft",2014,3,79,26.3
+"Airports & Aircraft",2016,3,90,30
+"Airports & Aircraft",2017,2,6,3
+"Business",1971,1,3,3
+"Business",1972,1,2,2
+"Business",1980,1,13,13
+"Business",1981,1,1,1
+"Business",1982,1,1,1
+"Business",1983,2,2,1
+"Business",1985,1,1,1
+"Business",1997,1,4,4
+"Business",1998,3,28,9.3
+"Business",1999,6,14,2.3
+"Business",2000,14,38,2.7
+"Business",2001,31,145,4.7
+"Business",2002,28,539,19.2
+"Business",2003,18,94,5.2
+"Business",2004,23,178,7.7
+"Business",2005,23,172,7.5
+"Business",2006,19,110,5.8
+"Business",2007,19,49,2.6
+"Business",2008,128,653,5.1
+"Business",2009,146,640,4.4
+"Business",2010,175,676,3.9
+"Business",2011,160,743,4.6
+"Business",2012,28,127,4.5
+"Business",2013,38,339,8.9
+"Business",2014,21,91,4.3
+"Business",2015,30,294,9.8
+"Business",2016,16,210,13.1
+"Business",2017,8,662,82.8
+"Business",2018,14,106,7.6
+"Business",2019,20,251,12.6
+"Educational Institution",1989,1,15,15
+"Educational Institution",1990,1,1,1
+"Educational Institution",1998,3,12,4
+"Educational Institution",1999,2,18,9
+"Educational Institution",2000,1,2,2
+"Educational Institution",2001,4,14,3.5
+"Educational Institution",2002,1,5,5
+"Educational Institution",2003,2,2,1
+"Educational Institution",2004,5,353,70.6
+"Educational Institution",2005,8,10,1.2
+"Educational Institution",2006,7,19,2.7
+"Educational Institution",2007,9,20,2.2
+"Educational Institution",2008,34,40,1.2
+"Educational Institution",2009,37,193,5.2
+"Educational Institution",2010,38,48,1.3
+"Educational Institution",2011,40,49,1.2
+"Educational Institution",2012,10,25,2.5
+"Educational Institution",2013,7,9,1.3
+"Educational Institution",2014,8,52,6.5
+"Educational Institution",2015,5,169,33.8
+"Educational Institution",2016,8,30,3.8
+"Educational Institution",2017,4,14,3.5
+"Educational Institution",2018,4,29,7.2
+"Educational Institution",2019,1,1,1
+"Food or Water Supply",2005,1,1,1
+"Food or Water Supply",2008,3,9,3
+"Food or Water Supply",2009,1,2,2
+"Food or Water Supply",2010,5,13,2.6
+"Food or Water Supply",2011,1,2,2
+"Food or Water Supply",2012,1,1,1
+"Government (Diplomatic)",2000,2,4,2
+"Government (Diplomatic)",2001,1,2,2
+"Government (Diplomatic)",2002,4,14,3.5
+"Government (Diplomatic)",2003,3,27,9
+"Government (Diplomatic)",2004,3,20,6.7
+"Government (Diplomatic)",2005,5,9,1.8
+"Government (Diplomatic)",2006,3,3,1
+"Government (Diplomatic)",2007,5,9,1.8
+"Government (Diplomatic)",2008,29,132,4.6
+"Government (Diplomatic)",2009,25,92,3.7
+"Government (Diplomatic)",2010,15,64,4.3
+"Government (Diplomatic)",2011,14,71,5.1
+"Government (Diplomatic)",2012,9,22,2.4
+"Government (Diplomatic)",2013,11,80,7.3
+"Government (Diplomatic)",2014,1,4,4
+"Government (Diplomatic)",2015,1,3,3
+"Government (Diplomatic)",2016,6,14,2.3
+"Government (Diplomatic)",2017,3,120,40
+"Government (Diplomatic)",2018,6,36,6
+"Government (Diplomatic)",2019,1,5,5
+"Government (General)",1975,1,4,4
+"Government (General)",1977,1,2,2
+"Government (General)",1981,1,6,6
+"Government (General)",1986,1,1,1
+"Government (General)",1989,1,1,1
+"Government (General)",1991,1,2,2
+"Government (General)",1995,1,1,1
+"Government (General)",1998,9,34,3.8
+"Government (General)",1999,12,25,2.1
+"Government (General)",2000,36,124,3.4
+"Government (General)",2001,48,314,6.5
+"Government (General)",2002,23,65,2.8
+"Government (General)",2003,18,108,6
+"Government (General)",2004,32,727,22.7
+"Government (General)",2005,45,163,3.6
+"Government (General)",2006,32,98,3.1
+"Government (General)",2007,29,75,2.6
+"Government (General)",2008,275,907,3.3
+"Government (General)",2009,346,1152,3.3
+"Government (General)",2010,403,1058,2.6
+"Government (General)",2011,444,1275,2.9
+"Government (General)",2012,24,121,5
+"Government (General)",2013,62,373,6
+"Government (General)",2014,48,219,4.6
+"Government (General)",2015,14,47,3.4
+"Government (General)",2016,21,171,8.1
+"Government (General)",2017,39,96,2.5
+"Government (General)",2018,45,216,4.8
+"Government (General)",2019,28,126,4.5
+"Journalists & Media",1978,1,16,16
+"Journalists & Media",1981,1,1,1
+"Journalists & Media",1982,1,1,1
+"Journalists & Media",1984,1,1,1
+"Journalists & Media",1987,1,1,1
+"Journalists & Media",1990,1,2,2
+"Journalists & Media",1991,2,2,1
+"Journalists & Media",2000,5,12,2.4
+"Journalists & Media",2001,9,10,1.1
+"Journalists & Media",2002,1,1,1
+"Journalists & Media",2003,2,10,5
+"Journalists & Media",2004,5,13,2.6
+"Journalists & Media",2005,2,2,1
+"Journalists & Media",2006,1,5,5
+"Journalists & Media",2007,4,4,1
+"Journalists & Media",2008,18,22,1.2
+"Journalists & Media",2009,14,17,1.2
+"Journalists & Media",2010,18,25,1.4
+"Journalists & Media",2011,12,17,1.4
+"Journalists & Media",2012,5,8,1.6
+"Journalists & Media",2013,4,21,5.2
+"Journalists & Media",2014,5,13,2.6
+"Journalists & Media",2015,7,22,3.1
+"Journalists & Media",2016,3,3,1
+"Journalists & Media",2017,3,3,1
+"Journalists & Media",2018,3,4,1.3
+"Journalists & Media",2019,2,2,1
+"Maritime",2000,1,5,5
+"Maritime",2002,1,1,1
+"Maritime",2004,3,134,44.7
+"Maritime",2008,1,1,1
+"Maritime",2009,4,15,3.8
+"Maritime",2010,1,2,2
+"Maritime",2011,1,3,3
+"Maritime",2016,1,29,29
+"Military",1971,2,2,1
+"Military",1979,1,1,1
+"Military",1985,1,2,2
+"Military",1986,1,2,2
+"Military",1990,1,2,2
+"Military",1991,2,16,8
+"Military",1992,2,29,14.5
+"Military",1995,2,37,18.5
+"Military",1996,1,12,12
+"Military",1997,5,218,43.6
+"Military",1998,7,67,9.6
+"Military",1999,17,68,4
+"Military",2000,65,468,7.2
+"Military",2001,37,395,10.7
+"Military",2002,42,304,7.2
+"Military",2003,46,239,5.2
+"Military",2004,52,297,5.7
+"Military",2005,61,303,5
+"Military",2006,45,202,4.5
+"Military",2007,62,447,7.2
+"Military",2008,92,494,5.4
+"Military",2009,76,332,4.4
+"Military",2010,101,646,6.4
+"Military",2011,169,856,5.1
+"Military",2012,53,354,6.7
+"Military",2013,93,587,6.3
+"Military",2014,75,753,10
+"Military",2015,33,257,7.8
+"Military",2016,32,174,5.4
+"Military",2017,42,818,19.5
+"Military",2018,25,151,6
+"Military",2019,31,147,4.7
+"NGO",1974,1,1,1
+"NGO",2001,1,1,1
+"NGO",2002,1,7,7
+"NGO",2003,3,16,5.3
+"NGO",2004,2,3,1.5
+"NGO",2005,2,2,1
+"NGO",2006,1,7,7
+"NGO",2007,1,1,1
+"NGO",2008,20,28,1.4
+"NGO",2009,17,21,1.2
+"NGO",2010,13,27,2.1
+"NGO",2011,15,35,2.3
+"NGO",2012,2,2,1
+"NGO",2013,1,1,1
+"NGO",2014,4,17,4.2
+"NGO",2016,1,4,4
+"Other",2005,1,3,3
+"Other",2008,2,9,4.5
+"Other",2009,3,13,4.3
+"Other",2010,2,9,4.5
+"Other",2011,1,18,18
+"Other",2013,1,6,6
+"Police",1970,9,10,1.1
+"Police",1971,2,3,1.5
+"Police",1972,2,3,1.5
+"Police",1973,1,8,8
+"Police",1974,1,1,1
+"Police",1998,6,94,15.7
+"Police",1999,15,119,7.9
+"Police",2000,47,211,4.5
+"Police",2001,25,147,5.9
+"Police",2002,25,75,3
+"Police",2003,26,95,3.7
+"Police",2004,44,430,9.8
+"Police",2005,68,340,5
+"Police",2006,73,276,3.8
+"Police",2007,127,463,3.6
+"Police",2008,184,721,3.9
+"Police",2009,207,932,4.5
+"Police",2010,283,963,3.4
+"Police",2011,383,1061,2.8
+"Police",2012,69,236,3.4
+"Police",2013,99,561,5.7
+"Police",2014,51,388,7.6
+"Police",2015,23,49,2.1
+"Police",2016,36,181,5
+"Police",2017,72,287,4
+"Police",2018,29,159,5.5
+"Police",2019,25,132,5.3
+"Private Citizens & Property",1970,3,3,1
+"Private Citizens & Property",1973,12,14,1.2
+"Private Citizens & Property",1974,6,6,1
+"Private Citizens & Property",1975,1,1,1
+"Private Citizens & Property",1977,1,1,1
+"Private Citizens & Property",1978,2,2,1
+"Private Citizens & Property",1979,3,4,1.3
+"Private Citizens & Property",1980,6,9,1.5
+"Private Citizens & Property",1981,1,1,1
+"Private Citizens & Property",1985,1,1,1
+"Private Citizens & Property",1988,4,52,13
+"Private Citizens & Property",1990,1,9,9
+"Private Citizens & Property",1991,3,43,14.3
+"Private Citizens & Property",1994,1,1,1
+"Private Citizens & Property",1995,1,14,14
+"Private Citizens & Property",1996,1,1,1
+"Private Citizens & Property",1997,1,23,23
+"Private Citizens & Property",1998,37,213,5.8
+"Private Citizens & Property",1999,42,521,12.4
+"Private Citizens & Property",2000,122,1040,8.5
+"Private Citizens & Property",2001,142,3731,26.3
+"Private Citizens & Property",2002,130,1143,8.8
+"Private Citizens & Property",2003,51,375,7.4
+"Private Citizens & Property",2004,55,508,9.2
+"Private Citizens & Property",2005,77,263,3.4
+"Private Citizens & Property",2006,65,398,6.1
+"Private Citizens & Property",2007,136,1281,9.4
+"Private Citizens & Property",2008,667,2581,3.9
+"Private Citizens & Property",2009,897,3741,4.2
+"Private Citizens & Property",2010,759,2691,3.5
+"Private Citizens & Property",2011,732,2393,3.3
+"Private Citizens & Property",2012,113,661,5.8
+"Private Citizens & Property",2013,174,1139,6.5
+"Private Citizens & Property",2014,99,1151,11.6
+"Private Citizens & Property",2015,78,545,7
+"Private Citizens & Property",2016,126,1218,9.7
+"Private Citizens & Property",2017,97,684,7.1
+"Private Citizens & Property",2018,69,1428,20.7
+"Private Citizens & Property",2019,52,236,4.5
+"Religious Figures/Institutions",1973,1,7,7
+"Religious Figures/Institutions",1983,1,2,2
+"Religious Figures/Institutions",1990,1,1,1
+"Religious Figures/Institutions",1998,2,3,1.5
+"Religious Figures/Institutions",1999,2,3,1.5
+"Religious Figures/Institutions",2000,3,8,2.7
+"Religious Figures/Institutions",2001,5,35,7
+"Religious Figures/Institutions",2002,10,214,21.4
+"Religious Figures/Institutions",2003,4,74,18.5
+"Religious Figures/Institutions",2004,5,148,29.6
+"Religious Figures/Institutions",2005,15,184,12.3
+"Religious Figures/Institutions",2006,8,49,6.1
+"Religious Figures/Institutions",2007,8,27,3.4
+"Religious Figures/Institutions",2008,52,239,4.6
+"Religious Figures/Institutions",2009,76,1066,14
+"Religious Figures/Institutions",2010,67,546,8.1
+"Religious Figures/Institutions",2011,71,295,4.2
+"Religious Figures/Institutions",2012,19,77,4.1
+"Religious Figures/Institutions",2013,41,429,10.5
+"Religious Figures/Institutions",2014,18,260,14.4
+"Religious Figures/Institutions",2015,27,251,9.3
+"Religious Figures/Institutions",2016,13,150,11.5
+"Religious Figures/Institutions",2017,15,526,35.1
+"Religious Figures/Institutions",2018,7,36,5.1
+"Religious Figures/Institutions",2019,14,189,13.5
+"Telecommunication",2002,1,1,1
+"Telecommunication",2007,1,2,2
+"Telecommunication",2008,2,2,1
+"Telecommunication",2009,2,3,1.5
+"Telecommunication",2010,1,1,1
+"Telecommunication",2011,2,2,1
+"Telecommunication",2019,1,1,1
+"Terrorists/Non-State Militia",1975,1,22,22
+"Terrorists/Non-State Militia",1999,4,15,3.8
+"Terrorists/Non-State Militia",2000,3,3,1
+"Terrorists/Non-State Militia",2001,2,13,6.5
+"Terrorists/Non-State Militia",2002,1,6,6
+"Terrorists/Non-State Militia",2003,2,2,1
+"Terrorists/Non-State Militia",2004,2,5,2.5
+"Terrorists/Non-State Militia",2005,4,8,2
+"Terrorists/Non-State Militia",2006,5,16,3.2
+"Terrorists/Non-State Militia",2007,12,68,5.7
+"Terrorists/Non-State Militia",2008,95,338,3.6
+"Terrorists/Non-State Militia",2009,62,308,5
+"Terrorists/Non-State Militia",2010,92,307,3.3
+"Terrorists/Non-State Militia",2011,103,215,2.1
+"Terrorists/Non-State Militia",2012,9,37,4.1
+"Terrorists/Non-State Militia",2013,9,74,8.2
+"Terrorists/Non-State Militia",2014,6,54,9
+"Terrorists/Non-State Militia",2015,3,5,1.7
+"Terrorists/Non-State Militia",2016,5,69,13.8
+"Terrorists/Non-State Militia",2017,2,6,3
+"Terrorists/Non-State Militia",2018,3,18,6
+"Terrorists/Non-State Militia",2019,3,7,2.3
+"Tourists",1999,2,19,9.5
+"Tourists",2000,1,2,2
+"Tourists",2001,2,3,1.5
+"Tourists",2002,2,6,3
+"Tourists",2003,2,11,5.5
+"Tourists",2005,3,30,10
+"Tourists",2006,4,20,5
+"Tourists",2008,4,7,1.8
+"Tourists",2009,3,9,3
+"Tourists",2010,3,11,3.7
+"Tourists",2012,1,7,7
+"Tourists",2014,1,5,5
+"Tourists",2017,3,11,3.7
+"Tourists",2018,2,3,1.5
+"Tourists",2019,1,8,8
+"Transportation",1988,1,9,9
+"Transportation",1997,2,39,19.5
+"Transportation",1998,2,13,6.5
+"Transportation",1999,4,32,8
+"Transportation",2000,9,27,3
+"Transportation",2001,17,44,2.6
+"Transportation",2002,21,103,4.9
+"Transportation",2003,8,41,5.1
+"Transportation",2004,8,250,31.2
+"Transportation",2005,7,89,12.7
+"Transportation",2006,7,288,41.1
+"Transportation",2007,20,57,2.8
+"Transportation",2008,80,456,5.7
+"Transportation",2009,68,261,3.8
+"Transportation",2010,59,412,7
+"Transportation",2011,50,293,5.9
+"Transportation",2012,9,44,4.9
+"Transportation",2013,11,100,9.1
+"Transportation",2014,11,63,5.7
+"Transportation",2015,13,58,4.5
+"Transportation",2016,6,79,13.2
+"Transportation",2017,2,17,8.5
+"Transportation",2018,3,4,1.3
+"Transportation",2019,1,3,3
+"Unknown",1975,1,3,3
+"Unknown",1977,1,8,8
+"Unknown",1998,1,3,3
+"Unknown",1999,2,3,1.5
+"Unknown",2000,1,4,4
+"Unknown",2001,1,3,3
+"Unknown",2002,3,4,1.3
+"Unknown",2003,3,3,1
+"Unknown",2004,2,2,1
+"Unknown",2006,1,1,1
+"Unknown",2007,1,3,3
+"Unknown",2008,10,31,3.1
+"Unknown",2009,5,12,2.4
+"Unknown",2010,5,7,1.4
+"Unknown",2011,15,39,2.6
+"Unknown",2013,3,6,2
+"Unknown",2015,1,1,1
+"Unknown",2016,2,17,8.5
+"Utilities",1972,1,1,1
+"Utilities",1998,1,48,48
+"Utilities",2000,1,9,9
+"Utilities",2003,1,1,1
+"Utilities",2005,2,3,1.5
+"Utilities",2006,4,13,3.2
+"Utilities",2007,2,4,2
+"Utilities",2008,7,10,1.4
+"Utilities",2009,8,35,4.4
+"Utilities",2010,2,4,2
+"Utilities",2011,2,2,1
+"Utilities",2012,1,1,1
+"Utilities",2014,2,5,2.5
+"Utilities",2017,1,1,1
+"Utilities",2018,1,2,2
+"Violent Political Party",1998,1,7,7
+"Violent Political Party",1999,1,2,2
+"Violent Political Party",2000,2,8,4
+"Violent Political Party",2001,1,2,2
+"Violent Political Party",2003,1,1,1
+"Violent Political Party",2004,2,52,26
+"Violent Political Party",2006,1,1,1
+"Violent Political Party",2007,7,40,5.7
+"Violent Political Party",2008,19,37,1.9
+"Violent Political Party",2009,30,54,1.8
+"Violent Political Party",2010,34,37,1.1
+"Violent Political Party",2011,22,27,1.2
+"Violent Political Party",2012,3,5,1.7
+"Violent Political Party",2013,11,22,2
+"Violent Political Party",2014,2,12,6
+"Violent Political Party",2015,1,1,1
+"Violent Political Party",2017,2,2,1
+"Violent Political Party",2018,2,3,1.5
+"Violent Political Party",2019,4,10,2.5
