@@ -11,8 +11,10 @@ Projeto feito com a intenção de identificar as habilidades mais requisitadas n
 
 As ferramentas e habilidades mais requisitadas dentre as 531 vagas extraídas somente no Brasil, foram:
 
+![HardSkills](https://raw.githubusercontent.com/Lucasf961/Projetos-data-analysis/main/WebScrapping_Jobs/Images/wordcloud_hard-skills.png)
 ![HardSkills](https://raw.githubusercontent.com/Lucasf961/Projetos-data-analysis/main/WebScrapping_Jobs/Images/hardskills.png)
 
+![SoftSkills](https://raw.githubusercontent.com/Lucasf961/Projetos-data-analysis/main/WebScrapping_Jobs/Images/wordcloud_soft-skills.png)
 ![SoftSkills](https://raw.githubusercontent.com/Lucasf961/Projetos-data-analysis/main/WebScrapping_Jobs/Images/softskills.png)
 
 
