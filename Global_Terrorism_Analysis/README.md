@@ -14,3 +14,6 @@ levando em conta que os dados originais contém mais de 200.000 linhas.
 ## Principais Ferramentas:
 R. Bibliotecas e Frameworks: tidyverse, ggplot2, plotly, leaflet, shiny, entre outras.
 
+## Link do App:
+[Shinyapps.io](https://lucasf961.shinyapps.io/Global_Terrorism_Analysis/?_ga=2.32563902.1461884560.1646695830-957472346.1644600739)
+
