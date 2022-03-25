@@ -1,0 +1,269 @@
+select 
+	customer_id,
+	seller_id,
+	order_approved_at,
+	order_delivered_customer_date,
+	order_estimated_delivery_date,
+	payment_value,
+	freight_value,
+	review_score,
+	product_category_name,
+	customer_state,
+	seller_state
+from joins
+
+-- resumo estatístico dos gastos dos clientes
+select
+	count(payment_value) as count,
+	round(avg(payment_value)::numeric,2) as media,
+	round(percentile_cont(0.25) within group(order by payment_value)::numeric,2) as perc_25,
+	round(percentile_cont(0.5) within group(order by payment_value)::numeric,2) as mediana,
+	round(percentile_cont(0.75) within group(order by payment_value)::numeric,2) as perc_75,
+	round(percentile_cont(0.90) within group(order by payment_value)::numeric,2) as perc_90,
+	round(stddev(payment_value)::numeric,2) as desvio_padrao,
+	round(max(payment_value)::numeric,2) as max, 
+	round(min(payment_value)::numeric,2) as min
+from joins
+	
+-- gasto total por estado
+
+select 
+	customer_state, 
+	sum(payment_value)::int as soma_gastos, 
+	round(sum(payment_value)::decimal / (select sum(payment_value)::decimal from joins) * 100, 2) as porcent_do_total
+from joins
+group by customer_state
+order by sum(payment_value) desc
+
+-- Quais estados com frete mais caro em relação ao valor total pago?
+
+select
+	*,
+	round((media_frete/media_total_pago)::numeric, 2) as relacao_frete_totalpago
+from
+	(select 
+		customer_state,
+		round(avg(freight_value)::numeric, 2) as media_frete,
+		round(avg(payment_value)::numeric, 2) as media_total_pago
+	from joins
+	group by customer_state) as subq
+order by relacao_frete_totalpago desc
+
+-- qual a média de gastos dos clientes recorrentes (aqueles que efetuaram 5 ou mais compras no período)?
+select
+	count(customer_id) as count_clientes_recorrentes,
+	round(avg(media)::numeric, 2) as media_gastos 
+from(
+	select 
+		customer_id,
+		count(payment_value) as qnt_compras,
+		avg(payment_value) media
+	from joins
+	group by customer_id
+	having count(payment_value) >= 5
+)as clientes_recorrentes
+
+-- qual média de gastos dos clientes não recorrentes (aqueles que efetuaram menos que 5 compras no período)?
+select
+	count(*) as count_clientes_nao_recorrentes,
+	round(avg(media)::numeric, 2) as media_gastos
+from(
+	select 
+		customer_id,
+		count(payment_value) as qnt_compras,
+		avg(payment_value) as media
+	from joins
+	group by customer_id
+	having count(payment_value) < 5
+)as clientes_nao_recorrentes
+
+-- qual a média de dias de atraso nas entregas para cada estado
+
+select 
+	*,
+	round((nullif(atrasado::numeric,0) / nullif(em_dia + atrasado::numeric,0) *100), 2) as taxa_atraso
+from(
+	select
+		customer_state,
+		(count_dias_atraso/atrasado)::numeric as media_dias_atraso,
+		atrasado,
+		em_dia
+	from
+		(select
+			customer_state,
+			sum(dias_atraso) as count_dias_atraso,
+			count(case when dias_atraso > 0 then +1 else null end) as atrasado,
+			count(case when dias_atraso = 0 then +1 else null end) as em_dia
+		from(
+			select
+				customer_state,
+				case when (order_delivered_customer_date - order_estimated_delivery_date) > 0 then (order_delivered_customer_date - order_estimated_delivery_date)
+				else 0 
+				end as dias_atraso
+			from joins
+		)as subq
+		group by customer_state) as subq2
+)as subq3
+order by media_dias_atraso desc
+
+-- qual as 5 maiores e menores taxas de atraso na entrega entre os vendedores com 500 ou mais vendas na base de dados?
+
+-- 5 menores taxas de atraso nas entregas
+select
+	rank() over(order by taxa_atraso asc) as ranking,
+	*
+from(
+	select 
+		*,
+		round((nullif(atraso::numeric,0)/nullif(em_dia+atraso::numeric,0) *100), 2) as taxa_atraso
+	from(
+		select 
+			seller_id,
+			count(case when atrasado = 'em dia' then +1 else null end)as em_dia,
+			count(case when atrasado = 'atraso' then +1 else null end) as atraso
+		from(
+			select 
+				seller_id,
+				case when (order_delivered_customer_date - order_estimated_delivery_date) > 0 then 'atraso' else 'em dia' 
+				end as atrasado
+			from joins
+		)as subquery1
+	group by seller_id
+ 	)as subquery2
+	where seller_id in(
+		select
+			seller_id
+		from joins
+		group by seller_id
+		having count(seller_id) >= 500
+	)
+)as subquery3
+limit 5
+
+-- 5 maiores taxas de atraso nas entregas
+select
+	rank() over(order by taxa_atraso desc) as ranking,
+	*
+from(
+	select 
+		*,
+		round((nullif(atraso::numeric,0)/nullif(em_dia+atraso::numeric,0) *100), 2) as taxa_atraso
+	from(
+		select 
+			seller_id,
+			count(case when atrasado = 'em dia' then +1 else null end)as em_dia,
+			count(case when atrasado = 'atraso' then +1 else null end) as atraso
+		from(
+			select 
+				seller_id,
+				case when (order_delivered_customer_date - order_estimated_delivery_date) > 0 then 'atraso' else 'em dia' 
+				end as atrasado
+			from joins
+		)as subquery1
+	group by seller_id
+ 	)as subquery2
+	where seller_id in(
+		select
+			seller_id
+		from joins
+		group by seller_id
+		having count(seller_id) >= 500
+	)
+)as subquery3
+limit 5
+
+-- qual a media de score de cada vendedor que atende ao critério
+-- de pelo menos 10 vendas em todos os 12 últimos meses da base de dados?
+
+create temporary table temp_table_seller(
+	seller varchar(100),
+	seller_state varchar(10),
+	review_score numeric,
+	order_approved_at timestamp
+);
+
+with last12months as(
+    select 
+		seller_id,
+		seller_state,
+		review_score,
+		order_approved_at
+	from joins
+	where order_approved_at >= '2017-09-01' and order_approved_at < '2018-09-01'
+	order by order_approved_at desc 
+)
+
+insert into temp_table_seller (seller,seller_state,review_score,order_approved_at) 
+	select * from last12months
+
+with cte_sales_by_month as (
+	select seller,
+		sum(case when month = '2017-09' then qnt_vendas end) as set_2017,
+		sum(case when month = '2017-10' then qnt_vendas end) as out_2017,
+		sum(case when month = '2017-11' then qnt_vendas end) as nov_2017,
+		sum(case when month = '2017-12' then qnt_vendas end) as dez_2017,
+		sum(case when month = '2018-01' then qnt_vendas end) as jan_2018,
+		sum(case when month = '2018-02' then qnt_vendas end) as fev_2018,
+		sum(case when month = '2018-03' then qnt_vendas end) as mar_2018,
+		sum(case when month = '2018-04' then qnt_vendas end) as abr_2018,
+		sum(case when month = '2018-05' then qnt_vendas end) as mai_2018,
+		sum(case when month = '2018-06' then qnt_vendas end) as jun_2018,
+		sum(case when month = '2018-07' then qnt_vendas end) as jul_2018,
+		sum(case when month = '2018-08' then qnt_vendas end) as ago_2018
+	from(
+		select
+			to_char(order_approved_at, 'yyyy-mm') as month,
+			seller,
+			count(seller) as qnt_vendas
+		from temp_table_seller
+		where seller in(
+			select
+				seller
+			from(
+				select 
+					to_char(order_approved_at, 'yyyy-mm') as month,
+					seller,
+					count(seller) as qnt_vendas
+				from temp_table_seller
+				group by month, seller
+				having count(seller) >= 10
+			)as subquery1
+			group by seller
+			having count(seller) = 12
+		)
+		group by month,seller
+	)as subquery2
+	group by seller
+	order by seller
+)
+
+
+select
+	avg_review.seller_state,
+	avg_review.media_score,
+	cte_sales_by_month.*
+from
+	(select
+		temp_table_seller.seller, 
+		seller_state,
+		round(avg(review_score), 2) as media_score
+	from temp_table_seller
+	where temp_table_seller.seller in
+		(select
+			seller
+		from(
+			select 
+				to_char(order_approved_at, 'yyyy-mm') as month,
+				seller,
+				count(seller) as qnt_vendas
+			from temp_table_seller
+			group by month, seller
+			having count(seller) >= 5
+		)as by_month
+		group by seller
+		having count(seller) = 12
+		)
+	group by temp_table_seller.seller, seller_state
+	order by avg(review_score) desc
+	) as avg_review
+inner join cte_sales_by_month on cte_sales_by_month.seller = avg_review.seller
