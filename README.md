@@ -3,5 +3,5 @@
 
 [Web Scrapping Linkedin Jobs](https://github.com/Lucasf961/Projetos-data-analysis/tree/main/WebScrapping_Jobs) - Análise de habilidades e ferramentas requisitadas nas vagas de analista de dados no linkedin.
 
-[Análise de Dados com SQL e Plotly](https://github.com/Lucasf961/EDA-EcommerceAnalysis-SQL)
+[Análise de Dados com SQL e Plotly](https://github.com/Lucasf961/EDA-EcommerceAnalysis-SQL) - Análise de dados com objetivo de responder hipóteses de negócio de um ecommerce.
  
