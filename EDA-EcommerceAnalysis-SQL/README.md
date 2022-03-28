@@ -40,17 +40,21 @@ com a finalidade de fornecer um relatório com todas as respostas detalhadas em 
 Foram levantadas as seguintes questões:
 1) Qual a tendência das vendas? Há uma tendência de crescimento?
 1) Quais estados com frete mais caro em relação ao valor total da compra?
-2) Há diferença no consumo dos clientes recorrentes (aqueles que efetuaram **5 ou mais** compras no período) e dos não recorrentes (aqueles que efetuaram **menos que 5** compras no período)?
+2) Há diferença na média de consumo dos clientes recorrentes (aqueles que efetuaram **5 ou mais** compras no período) e dos não recorrentes (aqueles que efetuaram **menos que 5** compras no período)?
 3) Qual a média de **dias de atraso** nas entregas por localidade?
 4) Qual as 5 maiores e menores taxas de atraso entre os vendedores com **500 ou mais vendas** na base de dados?
 5) Qual a média de score (avaliação) de cada vendedor que atende ao critério de: pelo menos 10 vendas em **todos** os 12 últimos meses da base de dados?
 
 ### Ferramentas Utilizadas
-Foi realizada toda a exploração e análise dos dados utilizando **SQL** e o SGBD utilizado foi o **PostgreSQL**. Para geração das visualizações foi utilizado a biblioteca **Plotly** da linguagem python. Após todos os datasets terem sidos baixados em formato csv no site do Kaggle e importados no PostgreSQL, foi feita uma _View_ da junção das tabelas do schema (mostrado na imagem da seção Dados).
+Foi realizada toda a exploração e análise dos dados utilizando **SQL**. Para geração das visualizações foi usada a biblioteca **plotly** da linguagem Python. Após todos os datasets terem sidos baixados em formato csv no site do Kaggle e importados no PostgreSQL, foi feita uma _View_ da junção das tabelas do schema (como mostrado na imagem da seção Dados).
 
-Foram utilizados diversos comandos para as análises, como cláusulas básicas de consulta como _SELECT, GROUP BY, ORDER BY, WHERE_. De agregação como _SUM, COUNT, AVG, STDDEV_. E outras funções como _CASE, WINDOW, SUBQUERY, TEMP TABLE, CTE_, entre outras.
+Foram utilizados diversos comandos para as análises em SQL, como cláusulas básicas de consulta como _SELECT, GROUP BY, ORDER BY, WHERE_. De agregação como _SUM, COUNT, AVG, STDDEV_. E outras funções como _CASE, WINDOW, SUBQUERY, TEMP TABLE, CTE_, entre outras. 
 
-Scripts da análise: [SQL](scripts/analiseSQL) e [Jupyter Notebook](scripts/analise_jupyter.ipynb).
+Script SQL: [SQL](scripts/analiseSQL)
+
+Já em python foi usada principalmente a biblioteca _plotly_. Além disso, o pacote _psycopg2_ auxiliou na conexão ao PostgreSQL.
+
+Script Python: [Jupyter Notebook](scripts/analise_jupyter.ipynb).
 
 ## Análise Exploratória dos Dados
 
@@ -98,15 +102,16 @@ Conforme o esperado, o Estado de São Paulo aparece como o mais representativo s
 ## Relatório
 
 ### 1) Qual a tendência das vendas? Há uma tendência de crescimento?
-O gráfico abaixo não mostra uma clara tendência na média móvel de 7 dias.
-As estações do ano aparecem para identificar algum tipo de sazonalidade.
+O gráfico abaixo mostra uma tendência de crescimento na média móvel de 7 dias.
+As estações do ano aparecem para identificar se há algum tipo de sazonalidade.
+
+Chama atenção o pico por volta do final de novembro de 2017. Nesse período acontece a _Black Friday_.
 ![pergunta6](scripts/images/pergunta6.png)
 
 ### 2) Quais estados com frete mais caro em relação ao valor total da compra?
 Os Estados do Norte e Nordeste tem o frete em média mais caro.
 
-Isso pode ser por conta de estarem localizados mais distantes dos grandes centros de distribuição, mas também pode ser pelo fato de terem um gasto em média maior,
-consequentemente o frete aumentaria proporcionalmente. Pela relação entre o frete pago e o valor total da compra, pode se confirmar que e a localização é um fator importante no valor do frete, como já era de se esperar. 
+Isso pode ser por conta de estarem localizados mais distantes dos grandes centros de distribuição, mas também pode ser pelo fato de terem um gasto em média maior -como pode ser observado na tabela e no gráfico abaixo- consequentemente o frete aumentaria proporcionalmente. Pela relação frete/gastos, pode se confirmar que a localização é um fator determinante no valor do frete, como já era de se esperar. 
 | Ranking | Estado do Consumidor| Media do Frete | Media dos Gastos | Relação Frete/Gastos (%) |
 |:------:|------------------|---------------|--------------------|---------------------------|
 | 1      | TO             | 39,74         | 213,59             | 18,61                     |
@@ -123,7 +128,7 @@ consequentemente o frete aumentaria proporcionalmente. Pela relação entre o fr
 
 ![pergunta1](scripts/images/pergunta1.png)
 
-### 3) Há diferença no consumo dos clientes recorrentes (aqueles que efetuaram 5 ou mais compras no período) e dos não recorrentes (aqueles que efetuaram menos que 5 compras no período)?
+### 3) Há diferença na média de consumo dos clientes recorrentes (aqueles que efetuaram 5 ou mais compras no período) e dos não recorrentes (aqueles que efetuaram menos que 5 compras no período)?
 Inicialmente, há uma diferença significativa no consumo dos dois tipos de clientes. Porém a quantidade de dados dos clientes recorrentes (na coluna "Quantidade de Clientes") é bem baixa. Por isso a volatilidade ao longo do tempo mostrado no gráfico é muito maior que dos clientes não recorrentes. Precisaria de mais dados para de fato tirar alguma conclusão.
 |     Clientes    | Quantidade <br>de Clientes | Média de Gasto<br> por Compra |
 |:---------------:|------------------------|---------------------------|
@@ -134,7 +139,7 @@ Inicialmente, há uma diferença significativa no consumo dos dois tipos de clie
 
 ### 4) Qual a média de dias de atraso nas entregas por localidade?
 Para responder essa questão, eu filtrei o dataset apenas quando houve atraso nas entregas.
-A região Norte se destaca negativamente, mas assim como na questão anterior, os dados de entregas concluídas com atraso são pequenos demais para se tirar alguma conclusão.
+Alguns estados da região Norte se destacam com mais dias de atraso, mas assim como na questão anterior, os dados de entregas concluídas com atraso são pequenos demais para se tirar alguma conclusão.
 | Ranking | Estado do <br>Consumidor | Média de Dias  <br>de Atraso | Entregas Concluídas  <br>com Atraso
 |:---:|---|---|---|
 | 1 | AP | 96 | 3 |
@@ -151,7 +156,7 @@ Para essa questão, a "taxa de atraso" foi definida pelo cálculo: (Entregas com
 Ou seja, no caso de uma taxa de 5%, a cada 100 entregas, 5 são recebidas com atraso pelo consumidor.  
 ![pergunta4](scripts/images/pergunta4.png)
 
-### 6) Qual a media de score de cada vendedor que atende ao critério de pelo menos 10 vendas em TODOS os 12 últimos meses da base de dados?
-24 vendedores atenderam ao critério proposto nessa questão. Optei por mostrar no gráfico os que se destacavam positivamente e negativamente.
-Lembrando que o Score é uma nota dada pelo cliente ao vendedor, sendo 0 a pior nota e 5 a maior.
+### 6) Qual a média de score (avaliação) de cada vendedor que atende ao critério de pelo menos 10 vendas em TODOS os 12 últimos meses da base de dados?
+24 vendedores atendem ao critério proposto nessa questão. Optei por mostrar no gráfico os que se destacavam positivamente e negativamente.
+Lembrando que o Score é uma nota dada pelo cliente ao vendedor, indo de 0 à 5.
 ![pergunta5](scripts/images/pergunta5.png)
