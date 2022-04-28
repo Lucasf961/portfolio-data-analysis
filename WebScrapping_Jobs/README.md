@@ -9,7 +9,7 @@ Projeto feito com a intenção de identificar as habilidades mais requisitadas n
 
 ## Insights
 
-As ferramentas e habilidades mais requisitadas dentre as 531 vagas extraídas somente no Brasil, foram:
+As ferramentas e habilidades mais requisitadas dentre as 531 vagas extraídas no Brasil, foram:
 
 #### HardSkills
 ![HardSkills](https://raw.githubusercontent.com/Lucasf961/Projetos-data-analysis/main/WebScrapping_Jobs/Images/wordcloud_hard-skills.png)
