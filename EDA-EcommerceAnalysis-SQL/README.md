@@ -119,7 +119,7 @@ Chama atenção o pico por volta do final de novembro de 2017. Nesse período ac
 
 Os Estados do Norte e Nordeste tem o frete em média mais caro.
 
-Isso pode ser por conta de estarem localizados mais distantes dos grandes centros de distribuição, mas também pode ser pelo fato de terem um gasto em média maior -como pode ser observado na tabela e no gráfico abaixo- consequentemente o frete aumentaria proporcionalmente. Pela relação frete/gastos, pode se confirmar que a localização é um fator determinante no valor do frete, como já era de se esperar.
+Isso pode ser por conta de estarem localizados mais distantes dos grandes centros de distribuição, mas também pode ser pelo fato de terem um gasto em média maior -como pode ser observado na tabela e no gráfico acima- consequentemente o frete aumentaria proporcionalmente. Pela relação frete/gastos, pode se confirmar que a localização é um fator determinante no valor do frete, como já era de se esperar.
 
 ### 3) Há diferença na média de consumo dos clientes recorrentes (aqueles que efetuaram 5 ou mais compras no período) e dos não recorrentes (aqueles que efetuaram menos que 5 compras no período)?
 |     Clientes    | Quantidade <br>de Clientes | Média de Gasto<br> por Compra |
