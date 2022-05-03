@@ -1,11 +1,8 @@
 # Analisando Dados e Respondendo Perguntas de Negócio
 
 ## Contexto
-Marketplace é basicamente o comércio tradicional de forma virtual (E-Commerce), onde os lojistas conseguem vender na internet de forma simples e com alta escalabilidade.
-O Olist é uma empresa Brasileira focada em e-commerce, que concentra vendedores que desejam anunciar em markeplaces como Mercado Livre, Amazon, B2W.
-Do outro lado, concentra os produtos de todos os vendedores em uma loja que fica visível ao consumidor final.
-
-O Olist promete alavancar as vendas online de lojistas, fornecendo ferramentas para otimização de toda cadeia de vendas, como logística, precificação, visibilidade, gestão integrada, entre outros.
+O Olist é uma empresa Brasileira focada em e-commerce, que concentra vendedores que desejam anunciar em markeplaces como Mercado Livre, Amazon e B2W.
+Do outro lado, concentra os produtos de todos os vendedores em uma loja que fica visível ao consumidor final. Marketplace é basicamente o comércio tradicional de forma virtual (E-Commerce), onde os lojistas conseguem vender na internet de forma simples e com alta escalabilidade. O Olist promete alavancar as vendas online de lojistas, fornecendo ferramentas para otimização de toda cadeia de vendas, como logística, precificação, visibilidade, gestão integrada, entre outros.
 
 ## Dados
 Os dados utilizados são públicos e disponibilizados pela empresa brasileira de soluções de ecommerce [Olist](https://olist.com/pt-br/).
@@ -14,7 +11,7 @@ Como se tratam de dados reais, foram ocultados informações confidenciais como 
 
 Os dados estão divididos em múltiplos datasets para uma melhor organização sendo o *olist_orders_dataset.csv* a dimensão fato do schema.
 
-<img src="https://i.imgur.com/HRhd2Y0.png" alt="schema" width="750"/>
+<img src="https://i.imgur.com/HRhd2Y0.png" alt="schema" width="650"/>
 
 São muitas colunas, portanto vou descrever somente as que eu utilizei:
 
@@ -74,7 +71,7 @@ Como já foi mencionado, alguns dados foram ocultados, portanto não está dispo
 |:----------:|:-------:|:---------:|:---------:|:---------:|-----------|-----------------|-----------|-------|
 | 117.329 |  172,06 |   60,75   |   108,10  |   189,06  | 337,04    | 265,39          | 13.664,08 | 0,00  | 
 
-<img src="scripts/images/histplot.png" alt="hist" width="900"/>
+<img src="scripts/images/histplot.png" alt="hist" width="800"/>
 
 ### Data do primeiro e último registro do dataset
 | Data inicial | Data Final             
@@ -147,7 +144,7 @@ Alguns estados da região Norte se destacam com mais dias de atraso, mas assim c
 | 5 | SE | 14 | 59 |
 
 ![pergunta3bar](scripts/images/pergunta3bar.png)
-<img src="scripts/images/pergunta3mapa.png" alt="pergunta3mapa" width="600"/>
+<img src="scripts/images/pergunta3mapa.png" alt="pergunta3mapa" width="550"/>
 
 ### 5) Qual as 5 maiores e menores taxas de atraso entre os vendedores com 500 ou mais vendas na base de dados?
 Para essa questão, a "taxa de atraso" foi definida pelo cálculo: (Entregas com atraso / Total de Entregas) por cada vendedor, formatada em porcentagem.
