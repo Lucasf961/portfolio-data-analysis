@@ -71,8 +71,6 @@ Como já foi mencionado, alguns dados foram ocultados, portanto não está dispo
 |:----------:|:-------:|:---------:|:---------:|:---------:|-----------|-----------------|-----------|-------|
 | 117.329 |  172,06 |   60,75   |   108,10  |   189,06  | 337,04    | 265,39          | 13.664,08 | 0,00  | 
 
-<img src="scripts/images/histplot.png" alt="hist" width="800"/>
-
 ### Data do primeiro e último registro do dataset
 | Data inicial | Data Final             
 |:----------------:|:-------------:|
