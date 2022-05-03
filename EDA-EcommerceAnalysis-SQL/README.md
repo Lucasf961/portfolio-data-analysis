@@ -45,11 +45,11 @@ Foi realizada toda a exploração e análise dos dados utilizando **SQL**. Para 
 
 Foram utilizados diversos comandos para as análises em SQL, como cláusulas básicas de consulta como _SELECT, GROUP BY, ORDER BY, WHERE_. De agregação como _SUM, COUNT, AVG, STDDEV_. E outras funções como _CASE, WINDOW, SUBQUERY, TEMP TABLE, CTE_, entre outras. 
 
-[Script SQL:](scripts/analiseSQL)
+[Script SQL](scripts/analiseSQL)
 
 Já em python foi usada principalmente a bibilioteca _plotly_. Além disso, o pacote _psycopg2_ auxiliou na conexão ao PostgreSQL.
 
-[Script Python:](scripts/analise_jupyter.ipynb).
+[Script Python](scripts/analise_jupyter.ipynb).
 
 ## Análise Exploratória dos Dados
 
