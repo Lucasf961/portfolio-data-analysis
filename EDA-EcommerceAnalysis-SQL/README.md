@@ -1,5 +1,12 @@
 # Analisando Dados e Respondendo Perguntas de Negócio
 
+## Contexto
+Marketplace é basicamente o comércio tradicional de forma virtual (E-Commerce), onde os lojistas conseguem vender na internet de forma simples e com alta escalabilidade.
+O Olist é uma empresa Brasileira focada em e-commerce, que concentra vendedores que desejam anunciar em markeplaces como Mercado Livre, Amazon, B2W.
+Do outro lado, concentra os produtos de todos os vendedores em uma loja que fica visível ao consumidor final.
+
+O Olist promete alavancar as vendas online de lojistas, fornecendo ferramentas para otimização de toda cadeia de vendas, como logística, precificação, visibilidade, gestão integrada, entre outros.
+
 ## Dados
 Os dados utilizados são públicos e disponibilizados pela empresa brasileira de soluções de ecommerce [Olist](https://olist.com/pt-br/).
 O dataset contém informações de cerca de 100k registros de vendas de diversos marketplaces no Brasil entre 2016 e 2018.
@@ -22,16 +29,7 @@ São muitas colunas, portanto vou descrever somente as que eu utilizei:
 -	**customer_state**: Estado do Cliente
 -	**seller_state**: Estado do Vendedor
 
-Disponível em [Kaggle.com](https://www.kaggle.com/olistbr/brazilian-ecommerce).
-
-## Contexto
-Marketplace é basicamente o comércio tradicional de forma virtual (E-Commerce), onde os lojistas conseguem vender na internet de forma simples e com alta escalabilidade.
-O Olist é uma empresa Brasileira focada em e-commerce, que concentra vendedores que desejam anunciar em markeplaces como Mercado Livre, Amazon, B2W.
-Do outro lado, concentra os produtos de todos os vendedores em uma loja que fica visível ao consumidor final.
-
-O Olist promete alavancar as vendas online de lojistas, fornecendo ferramentas para otimização de toda cadeia de vendas, como logística, precificação, visibilidade, gestão integrada, entre outros.
-
-Veja mais em: www.olist.com
+[Link para os datasets no Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce)
 
 ## Definição do Problema
 Visando um ambiente real de negócios, o objetivo é resolver algumas questões levantadas por gestores,
@@ -45,14 +43,14 @@ Foram levantadas as seguintes questões:
 4) Qual as 5 maiores e menores taxas de atraso entre os vendedores com **500 ou mais vendas** na base de dados?
 5) Qual a média de score (avaliação) de cada vendedor que atende ao critério de: pelo menos 10 vendas em **todos** os 12 últimos meses da base de dados?
 
-### Ferramentas Utilizadas
-Foi realizada toda a exploração e análise dos dados utilizando **SQL**. Para geração das visualizações foi usada a biblioteca **plotly** da linguagem Python. Após todos os datasets terem sidos baixados em formato csv no site do Kaggle e importados no PostgreSQL, foi feita uma _View_ da junção das tabelas do schema (como mostrado na imagem da seção Dados).
+## Ferramentas Utilizadas
+Foi realizada toda a exploração e análise dos dados utilizando **SQL**. Para geração das visualizações foi usada a biblioteca **Plotly** da linguagem Python.
 
 Foram utilizados diversos comandos para as análises em SQL, como cláusulas básicas de consulta como _SELECT, GROUP BY, ORDER BY, WHERE_. De agregação como _SUM, COUNT, AVG, STDDEV_. E outras funções como _CASE, WINDOW, SUBQUERY, TEMP TABLE, CTE_, entre outras. 
 
 [Script SQL:](scripts/analiseSQL)
 
-Já em python foi usada principalmente a biblioteca _plotly_. Além disso, o pacote _psycopg2_ auxiliou na conexão ao PostgreSQL.
+Já em python foi usada principalmente a bibilioteca _plotly_. Além disso, o pacote _psycopg2_ auxiliou na conexão ao PostgreSQL.
 
 [Script Python:](scripts/analise_jupyter.ipynb).
 
@@ -152,11 +150,11 @@ Alguns estados da região Norte se destacam com mais dias de atraso, mas assim c
 <img src="scripts/images/pergunta3mapa.png" alt="pergunta3mapa" width="600"/>
 
 ### 5) Qual as 5 maiores e menores taxas de atraso entre os vendedores com 500 ou mais vendas na base de dados?
-Para essa questão, a "taxa de atraso" foi definida pelo cálculo: (Entregas com atraso / Total de Entregas) por cada vendedor, mostrada em porcentagem.
+Para essa questão, a "taxa de atraso" foi definida pelo cálculo: (Entregas com atraso / Total de Entregas) por cada vendedor, formatada em porcentagem.
 Ou seja, no caso de uma taxa de 5%, a cada 100 entregas, 5 são recebidas com atraso pelo consumidor.  
 ![pergunta4](scripts/images/pergunta4.png)
 
 ### 6) Qual a média de score (avaliação) de cada vendedor que atende ao critério de pelo menos 10 vendas em TODOS os 12 últimos meses da base de dados?
 24 vendedores atendem ao critério proposto nessa questão. Optei por mostrar no gráfico os que se destacavam positivamente e negativamente.
-Lembrando que o Score é uma nota dada pelo cliente ao vendedor, indo de 0 à 5.
+Lembrando que o Score é uma avaliação da experiência de compra pelo cliente, podendo ir de 0 à 5.
 ![pergunta5](scripts/images/pergunta5.png)
