@@ -9,7 +9,7 @@ Os dados utilizados são públicos e disponibilizados pela empresa brasileira de
 O dataset contém informações de cerca de 100k registros de vendas de diversos marketplaces no Brasil entre 2016 e 2018.
 Como se tratam de dados reais, foram ocultados informações confidenciais como nomes.
 
-Os dados estão divididos em múltiplos datasets para uma melhor organização sendo o *olist_orders_dataset.csv* a dimensão fato do schema.
+Os dados estão organizados em um modelo multidimensional sendo o *olist_orders_dataset.csv* a tabela fato do modelo.
 
 <img src="https://i.imgur.com/HRhd2Y0.png" alt="schema" width="650"/>
 
